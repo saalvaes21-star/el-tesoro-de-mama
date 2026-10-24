@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <meta
+    name="description"
+    content="El Tesoro de Mamá: recuerdos, voces y pequeñas cosas que cuentan tu historia."
+  />
+
+  <meta name="theme-color" content="#fdf8f5" />
+
+  <title>El Tesoro de Mamá</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- model-viewer.
+       Lo dejamos listo desde ahora aunque todavía no tengas los .glb. -->
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+  ></script>
+
+  <!-- JavaScript principal -->
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
+
+  <header class="site-header" id="top">
+
+    <a href="#inicio" class="brand" aria-label="Ir al inicio">
+      <span class="brand-icon">✦</span>
+
+      <span class="brand-text">
+        El Tesoro de Mamá
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+
+      <a href="#cofre">
+        El tesoro
+      </a>
+
+      <a href="#coleccion">
+        Colección
+      </a>
+
+      <a href="#recuerdos">
+        Recuerdos
+      </a>
+
+      <a href="#cofre" class="nav-highlight">
+        Su regalo
+        <span aria-hidden="true">♡</span>
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+    ======================================================= -->
+
+    <section
+      class="hero"
+      id="inicio"
+      aria-labelledby="hero-title"
+    >
+
+      <div class="hero-decoration hero-decoration-left" aria-hidden="true">
+        ❀
+      </div>
+
+      <div class="hero-decoration hero-decoration-right" aria-hidden="true">
+        ✿
+      </div>
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          ✦ UN REGALO HECHO CON AMOR ✦
+        </span>
+
+        <h1 id="hero-title">
+          El Tesoro
+          <span>de Mamá</span>
+        </h1>
+
+        <p class="hero-text">
+          Recuerdos, voces y pequeñas cosas que cuentan tu historia.
+          Un regalo hecho para volver a esos momentos
+          que siempre tendrán un lugar especial en nuestra familia.
+        </p>
+
+        <div class="hero-ornament" aria-hidden="true">
+          <span>✿</span>
+          <span>♡</span>
+          <span>✿</span>
+        </div>
+
+        <a href="#cofre" class="primary-button">
+          Comenzar el recorrido
+
+          <span aria-hidden="true">
+            ↓
+          </span>
+        </a>
+
+      </div>
+
+      <p class="hero-caption">
+        UNA HISTORIA INFINITA HECHA DE PEQUEÑOS MOMENTOS
+      </p>
+
+    </section>
+
+
+    <!-- ======================================================
+         COFRE PRINCIPAL
+    ======================================================= -->
+
+    <section
+      class="museum-section treasure-section"
+      id="cofre"
+      aria-labelledby="treasure-title"
+    >
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          EL GRAN TESORO · 01
+        </span>
+
+        <h2 id="treasure-title">
+          Un tesoro esperando
+          <span>ser descubierto</span>
+        </h2>
+
+        <p>
+          Dentro de este cofre hay algo que el tiempo
+          nunca podrá borrar.
+        </p>
+
+      </div>
+
+
+      <div class="treasure-stage">
+
+        <div class="stage-light" aria-hidden="true"></div>
+
+        <!--
+          Mientras no exista assets/3d/cofre_dorado.glb,
+          app.js podrá mantener visible el placeholder.
+        -->
+
+        <div
+          class="model-placeholder chest-placeholder"
+          id="chestPlaceholder"
+        >
+
+          <div class="placeholder-glow"></div>
+
+          <div class="placeholder-symbol">
+            ♛
+          </div>
+
+          <div class="placeholder-chest">
+            <span class="placeholder-lid"></span>
+            <span class="placeholder-lock">✦</span>
+          </div>
+
+          <p>
+            Aquí aparecerá el cofre dorado 3D
+          </p>
+
+        </div>
+
+
+        <model-viewer
+          id="goldenChest"
+          class="main-model hidden-model"
+          src="assets/3d/cofre_dorado.glb"
+          alt="Cofre dorado interactivo con recuerdos familiares"
+          camera-controls
+          auto-rotate
+          rotation-per-second="12deg"
+          shadow-intensity="1.3"
+          shadow-softness="0.8"
+          exposure="1.05"
+          interaction-prompt="none"
+          touch-action="pan-y"
+        >
+        </model-viewer>
+
+
+        <div class="museum-plaque">
+          <span>
+            EL CORAZÓN DEL TESORO
+          </span>
+
+          <strong>
+            El Cofre de Mamá
+          </strong>
+
+          <small>
+            Donde viven nuestros recuerdos
+          </small>
+        </div>
+
+      </div>
+
+
+      <button
+        type="button"
+        class="primary-button reveal-button"
+        id="openChestButton"
+      >
+        <span>
+          Abrir el cofre
+        </span>
+
+        <span aria-hidden="true">
+          ✧
+        </span>
+      </button>
+
+
+      <p class="interaction-hint">
+        Puedes tocar el cofre o usar el botón para descubrir la sorpresa.
+      </p>
+
+    </section>
+
+
+    <!-- ======================================================
+         COLECCIONABLES
+    ======================================================= -->
+
+    <section
+      class="museum-section collection-section"
+      id="coleccion"
+      aria-labelledby="collection-title"
+    >
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          PEQUEÑAS COSAS QUE HABLAN DE TI · 02
+        </span>
+
+        <h2 id="collection-title">
+          Detalles que también
+          <span>cuentan tu historia</span>
+        </h2>
+
+        <p>
+          Objetos, gustos y pequeños detalles que también forman parte
+          de lo que te hace única.
+        </p>
+
+      </div>
+
+
+      <div class="collection-grid">
+
+
+        <!-- ÁLBUM -->
+
+        <article class="collection-card">
+
+          <div class="collection-model">
+
+            <div class="object-placeholder">
+              <span>
+                ❦
+              </span>
+
+              <strong>
+                Álbum
+              </strong>
+            </div>
+
+            <model-viewer
+              class="collectible-model hidden-model"
+              src="assets/3d/album.glb"
+              alt="Álbum de cuero antiguo"
+              camera-controls
+              auto-rotate
+              interaction-prompt="none"
+              shadow-intensity="1"
+            >
+            </model-viewer>
+
+          </div>
+
+          <div class="collection-content">
+
+            <span class="collection-number">
+              PIEZA 01
+            </span>
+
+            <h3>
+              Álbum de recuerdos
+            </h3>
+
+            <p>
+              Porque hay momentos que merecen volver a mirarse
+              una y otra vez.
+            </p>
+
+            <button
+              type="button"
+              class="room-button"
+              data-room="vida"
+            >
+              Descubrir esta pieza
+
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- GATO EGIPCIO -->
+
+        <article class="collection-card">
+
+          <div class="collection-model">
+
+            <div class="object-placeholder egypt-placeholder">
+              <span>
+                𓃠
+              </span>
+
+              <strong>
+                Bastet
+              </strong>
+            </div>
+
+            <model-viewer
+              class="collectible-model hidden-model"
+              src="assets/3d/gato_egipcio.glb"
+              alt="Figura egipcia de Bastet"
+              camera-controls
+              auto-rotate
+              interaction-prompt="none"
+              shadow-intensity="1"
+            >
+            </model-viewer>
+
+          </div>
+
+          <div class="collection-content">
+
+            <span class="collection-number">
+              PIEZA 02
+            </span>
+
+            <h3>
+              Bastet
+            </h3>
+
+            <p>
+              Porque tu curiosidad por Egipto siempre ha sido
+              parte de ti.
+            </p>
+
+            <button
+              type="button"
+              class="room-button"
+              data-room="egipto"
+            >
+              Descubrir esta pieza
+
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- CABALLO -->
+
+        <article class="collection-card">
+
+          <div class="collection-model">
+
+            <div class="object-placeholder horse-placeholder">
+              <span>
+                ♞
+              </span>
+
+              <strong>
+                Caballo
+              </strong>
+            </div>
+
+            <model-viewer
+              class="collectible-model hidden-model"
+              src="assets/3d/caballo.glb"
+              alt="Caballo decorativo de madera"
+              camera-controls
+              auto-rotate
+              interaction-prompt="none"
+              shadow-intensity="1"
+            >
+            </model-viewer>
+
+          </div>
+
+          <div class="collection-content">
+
+            <span class="collection-number">
+              PIEZA 03
+            </span>
+
+            <h3>
+              El caballo
+            </h3>
+
+            <p>
+              Porque la naturaleza, los caballos y esa sensación de libertad
+              también hablan de lo que disfrutas.
+            </p>
+
+            <button
+              type="button"
+              class="room-button"
+              data-room="naturaleza"
+            >
+              Descubrir esta pieza
+
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- LIBROS -->
+
+        <article class="collection-card">
+
+          <div class="collection-model">
+
+            <div class="object-placeholder books-placeholder">
+              <span>
+                ✦
+              </span>
+
+              <strong>
+                Libros
+              </strong>
+            </div>
+
+            <model-viewer
+              class="collectible-model hidden-model"
+              src="assets/3d/libros.glb"
+              alt="Colección de libros antiguos"
+              camera-controls
+              auto-rotate
+              interaction-prompt="none"
+              shadow-intensity="1"
+            >
+            </model-viewer>
+
+          </div>
+
+          <div class="collection-content">
+
+            <span class="collection-number">
+              PIEZA 04
+            </span>
+
+            <h3>
+              Los libros
+            </h3>
+
+            <p>
+              Porque entre páginas también se guardan mundos,
+              ideas y momentos de calma.
+            </p>
+
+            <button
+              type="button"
+              class="room-button"
+              data-room="lectura"
+            >
+              Descubrir esta pieza
+
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         RECUERDOS FAMILIARES
+    ======================================================= -->
+
+    <section
+      class="museum-section memories-section"
+      id="recuerdos"
+      aria-labelledby="memories-title"
+    >
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          VOCES DEL CORAZÓN · 03
+        </span>
+
+        <h2 id="memories-title">
+          Palabras que abrazan
+          <span>el alma</span>
+        </h2>
+
+        <p>
+          Algunas palabras merecen escribirse.
+          Otras merecen escucharse una y otra vez.
+        </p>
+
+      </div>
+
+
+      <!-- app.js cargará aquí memories.json -->
+
+      <div
+        class="memory-grid"
+        id="memoryGrid"
+        aria-live="polite"
+      >
+
+        <div class="loading-memory">
+          Preparando los recuerdos…
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CIERRE
+    ======================================================= -->
+
+    <section class="final-message">
+
+      <div class="final-heart" aria-hidden="true">
+        ♡
+      </div>
+
+      <span class="eyebrow">
+        EL TESORO MÁS IMPORTANTE
+      </span>
+
+      <h2>
+        Eres tú.
+      </h2>
+
+      <p>
+        Porque detrás de cada recuerdo, cada voz y cada momento,
+        estás tú y todo lo que has sembrado en nuestra familia.
+      </p>
+
+      <div class="signature">
+
+        <span>
+          Feliz cumpleaños, Mamá
+        </span>
+
+        <small>
+          CON TODO EL AMOR DE TU FAMILIA
+        </small>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer class="site-footer">
+
+    <span>
+      El Tesoro de Mamá
+    </span>
+
+    <span aria-hidden="true">
+      ♡
+    </span>
+
+    <span>
+      Hecho con amor
+    </span>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MODAL / DRAWER
+  ======================================================= -->
+
+  <dialog
+    class="museum-dialog"
+    id="museumDialog"
+    aria-labelledby="dialogTitle"
+  >
+
+    <div class="dialog-inner">
+
+      <button
+        type="button"
+        class="dialog-close"
+        id="closeDialog"
+        aria-label="Cerrar ventana"
+      >
+        ×
+      </button>
+
+      <span
+        class="eyebrow"
+        id="dialogEyebrow"
+      >
+        UN RECUERDO ESPECIAL
+      </span>
+
+      <h2 id="dialogTitle">
+        Para ti, Mamá
+      </h2>
+
+      <div
+        class="dialog-body"
+        id="dialogBody"
+      >
+      </div>
+
+    </div>
+
+  </dialog>
+
+
+  <!-- Fondo decorativo global -->
+
+  <div
+    class="grain-overlay"
+    aria-hidden="true"
+  >
+  </div>
+
+</body>
+</html>
