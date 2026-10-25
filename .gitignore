@@ -1,0 +1,9 @@
+# Respaldos creados durante el desarrollo
+*.bak
+*.bak-*
+*.bak_*
+*.bak*
+
+# Archivos temporales
+.DS_Store
+*.tmp

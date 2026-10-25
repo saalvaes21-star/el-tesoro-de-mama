@@ -4,62 +4,69 @@
     "orden": 1,
     "familiar": "Pareja",
     "nombre": "Cristian",
-    "foto": "",
-    "mensaje": "Gracias por compartir tantos años, momentos, aprendizajes y recuerdos. Esta historia es más bonita porque la hemos vivido juntos.",
-    "audio": ""
+    "foto": "assets/images/cristian.jpg",
+    "mensaje": "Después de tantos años juntos, hemos construido una vida llena de recuerdos, aprendizajes, risas y momentos que solo nosotros conocemos. Hemos pasado por muchas etapas y, aun así, sigo agradeciendo poder compartir este camino contigo. Si pudiera volver a empezar, volvería a elegir caminar a tu lado.",
+    "audioMensaje": "assets/audio/cristian-mensaje Ptt 2026-10-25 at 00.42.26.ogg",
+    "audioCumple": "assets/audio/cristian-cumple Ptt 2026-10-25 at 00.45.17.ogg"
   },
   {
     "id": 2,
     "orden": 2,
     "familiar": "Hijo",
     "nombre": "Saúl",
-    "foto": "",
-    "mensaje": "Mamá, gracias por todo lo que me has enseñado, por tu paciencia y por ese amor que siempre ha estado presente.",
-    "audio": ""
+    "foto": "assets/images/saul.jpg",
+    "mensaje": "Mamá, conforme he ido creciendo también he aprendido a mirar distinto muchas cosas que antes daba por hechas. Tu manera de estar, de preocuparte y de seguir adelante ha dejado mucho más en mí de lo que probablemente te digo. Parte de quien soy también viene de ti.",
+    "audioMensaje": "assets/audio/saul-mensaje.m4a",
+    "audioCumple": "assets/audio/saul-cumple.m4a"
   },
   {
     "id": 3,
     "orden": 3,
     "familiar": "Hija",
     "nombre": "Mariel",
-    "foto": "",
-    "mensaje": "Hay recuerdos contigo que siempre van a formar parte de mí. Gracias por estar presente en tantos momentos importantes.",
-    "audio": ""
+    "foto": "assets/images/mariel.jpg",
+    "mensaje": "Mamá, contigo hay una historia hecha de muchas etapas, cambios y momentos que solo nosotras entendemos del todo. Aun cuando la vida se mueve y todo cambia, saber que estás ahí sigue teniendo un valor enorme para mí.",
+    "audioMensaje": "assets/audio/mariel-mensaje Ptt 2026-10-25 at 02.16.08.ogg",
+    "audioCumple": "assets/audio/mariel-cumple Ptt 2026-10-25 at 02.26.08.ogg"
   },
   {
     "id": 4,
     "orden": 4,
     "familiar": "Hija",
     "nombre": "Sofía",
-    "foto": "",
-    "mensaje": "Gracias por cada momento, cada consejo y cada recuerdo que hemos compartido. Siempre llevo una parte de ti conmigo.",
-    "audio": ""
+    "foto": "assets/images/sofia.jpg",
+    "mensaje": "Mamá, hay muchas formas en las que has estado presente en mi vida, incluso en cosas que parecen pequeñas. Tu manera de preocuparte, de preguntar, de acompañar y de estar pendiente siempre ha significado mucho para mí. Son esos detalles tuyos los que más se quedan.",
+    "audioMensaje": "assets/audio/sofia-mensaje Audio 2026-10-25 at 02.18.35.mp4",
+    "audioCumple": "assets/audio/sofia-cumple Audio 2026-10-25 at 02.06.35.mp4"
   },
   {
     "id": 5,
     "orden": 5,
     "familiar": "Hija",
     "nombre": "Daniela",
-    "foto": "",
-    "mensaje": "Gracias por ser parte de tantos recuerdos especiales y por todo el cariño que has dado a nuestra familia.",
-    "audio": ""
+    "foto": "assets/images/daniela.jpg",
+    "mensaje": "Mamá, contigo he aprendido que muchas veces el amor está en la forma de cuidar, de insistir, de estar pendiente y de no soltar cuando las cosas se complican. Hay muchas cosas de ti que llevo conmigo y que con el tiempo he aprendido a valorar mucho más.",
+    "audioMensaje": "assets/audio/daniela-mensaje Audio 2026-10-25 at 01.17.22.mp4",
+    "audioCumple": "assets/audio/daniela-cumple Audio 2026-10-25 at 01.17.57.mp4"
   },
   {
     "id": 6,
     "orden": 6,
     "familiar": "Nuera",
     "nombre": "Erandi",
-    "foto": "",
-    "mensaje": "Gracias por recibirme con cariño y por todos los momentos que hemos compartido como familia.",
-    "audio": ""
+    "foto": "assets/images/erandi.jpg",
+    "mensaje": "Desde que llegué a la familia me hizo sentir bienvenida de una manera muy natural. Con el tiempo hemos compartido risas, reuniones, viajes y muchos momentos que hicieron sentirme realmente parte de la familia. Eso lo valoro muchísimo.",
+    "audioMensaje": "assets/audio/erandi-mensaje Ptt 2026-10-24 at 14.52.24.ogg",
+    "audioCumple": "assets/audio/erandi-cumple Ptt 2026-10-24 at 14.54.09.ogg"
   },
   {
     "id": 7,
     "orden": 7,
     "familiar": "Nieto",
     "nombre": "Saúl Alexander",
-    "foto": "",
-    "mensaje": "Abuelita, gracias por tu cariño, tus sonrisas y por todos los momentos bonitos que compartimos contigo.",
-    "audio": ""
+    "foto": "assets/images/alexander.jpg",
+    "mensaje": "Abuelita, todavía soy muy pequeño para decirte todo esto con mis propias palabras, pero hay cosas que ya sé reconocer: tus brazos, tu voz, tus sonrisas y ese cariño con el que siempre me recibes. Algún día podré decírtelo yo; por ahora, queda guardado aquí para ti.",
+    "audioMensaje": "",
+    "audioCumple": ""
   }
 ]
