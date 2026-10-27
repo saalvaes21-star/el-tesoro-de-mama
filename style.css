@@ -11357,3 +11357,40 @@ body.album-lightbox-open-v30 {
 
 
 /* === FINAL SPACING V33 END === */
+/* === MOBILE FLOWERS FRONT V35 START === */
+
+@media (max-width: 700px) {
+
+  .final-message {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .final-message::before,
+  .final-message::after {
+    z-index: 5 !important;
+    opacity: .68 !important;
+    pointer-events: none !important;
+  }
+
+  .final-message::before {
+    left: 10px !important;
+    right: auto !important;
+  }
+
+  .final-message::after {
+    right: 10px !important;
+    left: auto !important;
+  }
+
+  .final-message img,
+  .final-message picture,
+  .final-message .final-photo,
+  .final-message .closing-photo {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+}
+
+/* === MOBILE FLOWERS FRONT V35 END === */
